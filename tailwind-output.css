@@ -378,7 +378,7 @@
     --color-primary-dark-desaturated-blue: hsl(244, 38%, 16%);
     --color-primary-soft-violet: hsl(277, 64%, 61%);
     --color-neutral-white-75: hsla(0, 0%, 100%, 0.75);
-    --color-neustral-white-60: (stat headings): hsla(0, 0%, 100%, 0.6);
+    --color-neutral-white-60: (stat headings): hsla(0, 0%, 100%, 0.6);
   }
 }
 @layer base {
@@ -784,22 +784,6 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
-  .size-1 {
-    width: calc(var(--spacing) * 1);
-    height: calc(var(--spacing) * 1);
-  }
-  .size-2 {
-    width: calc(var(--spacing) * 2);
-    height: calc(var(--spacing) * 2);
-  }
-  .size-3 {
-    width: calc(var(--spacing) * 3);
-    height: calc(var(--spacing) * 3);
-  }
-  .size-3\.5 {
-    width: calc(var(--spacing) * 3.5);
-    height: calc(var(--spacing) * 3.5);
-  }
   .h-screen {
     height: 100vh;
   }
@@ -811,9 +795,6 @@
   }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -1669,9 +1650,6 @@
   .text-\[15px\] {
     font-size: 15px;
   }
-  .text-\[300px\] {
-    font-size: 300px;
-  }
   .leading-none {
     --tw-leading: 1;
     line-height: 1;
@@ -1748,6 +1726,9 @@
   }
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
+  }
+  .text-neutral-white-60 {
+    color: var(--color-neutral-white-60);
   }
   .text-neutral-white-75 {
     color: var(--color-neutral-white-75);
