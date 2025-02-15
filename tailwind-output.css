@@ -374,6 +374,11 @@
     --default-mono-font-variation-settings: var(
       --font-mono--font-variation-settings
     );
+    --color-primary-very-dark-blue: hsl(233, 47%, 7%);
+    --color-primary-dark-desaturated-blue: hsl(244, 38%, 16%);
+    --color-primary-soft-violet: hsl(277, 64%, 61%);
+    --color-neutral-white-75: hsla(0, 0%, 100%, 0.75);
+    --color-neustral-white-60: (stat headings): hsla(0, 0%, 100%, 0.6);
   }
 }
 @layer base {
@@ -779,6 +784,22 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .size-1 {
+    width: calc(var(--spacing) * 1);
+    height: calc(var(--spacing) * 1);
+  }
+  .size-2 {
+    width: calc(var(--spacing) * 2);
+    height: calc(var(--spacing) * 2);
+  }
+  .size-3 {
+    width: calc(var(--spacing) * 3);
+    height: calc(var(--spacing) * 3);
+  }
+  .size-3\.5 {
+    width: calc(var(--spacing) * 3.5);
+    height: calc(var(--spacing) * 3.5);
+  }
   .h-screen {
     height: 100vh;
   }
@@ -790,6 +811,9 @@
   }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -1416,6 +1440,12 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
+  .bg-primary-dark-desaturated-blue {
+    background-color: var(--color-primary-dark-desaturated-blue);
+  }
+  .bg-primary-very-dark-blue {
+    background-color: var(--color-primary-very-dark-blue);
+  }
   .bg-red-500 {
     background-color: var(--color-red-500);
   }
@@ -1636,6 +1666,12 @@
   .align-top {
     vertical-align: top;
   }
+  .text-\[15px\] {
+    font-size: 15px;
+  }
+  .text-\[300px\] {
+    font-size: 300px;
+  }
   .leading-none {
     --tw-leading: 1;
     line-height: 1;
@@ -1712,6 +1748,12 @@
   }
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
+  }
+  .text-neutral-white-75 {
+    color: var(--color-neutral-white-75);
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .capitalize {
     text-transform: capitalize;
