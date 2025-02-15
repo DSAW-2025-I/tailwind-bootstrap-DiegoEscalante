@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="./tailwind-output.css" rel="stylesheet">
   <title>Tailwind | Stats preview card component</title>
 
@@ -15,26 +16,27 @@
   </style>
 </head>
 
-<body class="bg-primary-very-dark-blue">
-  <div class="bg-primary-dark-desaturated-blue mx-48 my-64 flex justify-around rounded-lg">
-    <div class="mx-24 my-28">
-      <h1 class="text-white text-5xl">Get <strong class="text-primary-soft-violet">insights</strong> that help your business grow.</h1>
+<body class="bg-primary-very-dark-blue font-[Inter] font-normal">
+  <div class="bg-primary-dark-desaturated-blue mx-52 my-52 flex justify-around rounded-lg">
+    <div class="ml-18 mr-auto mt-18 pr-48">
+      <h1 class="text-white text-5xl mb-10 font-bold leading-16">Get <strong class="text-primary-soft-violet font-bold">insights</strong> that help your business grow.</h1>
 
-      <p class="text-neutral-white-75 text-[15px]">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+      <p class="text-neutral-white-75 text-xl mb-12">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
       experience, and overall efficiency.</p>
-
-      <ul>
-        <li class="text-white">10k+<strong class="text-neutral-white-60 uppercase"> companies</strong></li>
-        <li class="text-white">314<strong class = "text-neutral-white-60 uppercase"> templates</strong> </li>
-        <li class="text-white">12m+<strong class = "text-neutral-white-60 uppercase"> queries</strong></li>
-      </ul>
+      <div class="mr-24">
+        <ul class="flex justify-between">
+          <li class="text-white font-bold flex flex-col text-3xl leading-8">10k+<strong class="text-neutral-white-60 uppercase font-[Lexend Deca] font-normal text-[15px]"> companies</strong></li>
+          <li class="text-white font-bold flex flex-col text-3xl leading-8">314<strong class = "text-neutral-white-60 uppercase font-[Lexend Deca] font-normal text-[15px]"> templates</strong> </li>
+          <li class="text-white font-bold flex flex-col text-3xl leading-8">12M+<strong class = "text-neutral-white-60 uppercase font-[Lexend Deca] font-normal text-[15px]"> queries</strong></li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <img src="./images/image-header-desktop.jpg" class="rounded-r-lg">
+    <div class="relative w-7xl h-full after:absolute after:inset-0 after:bg-primary-soft-violet after:mix-blend-multiply after:rounded-r-lg">
+      <img src="./images/image-header-desktop.jpg" class="rounded-r-lg w-full h-full object-cover">
     </div>
   </div>
 
-  <div class="attribution">
+  <div class="attribution text-neutral-400">
     Coded by <a href="#">Diego Escalante</a>.
   </div>
 </body>
